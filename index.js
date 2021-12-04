@@ -54,7 +54,7 @@ async function run() {
       core.info("Using custom emoji mapping");
       core.info(emojiMapToUse);
     } else {
-      core.info("Using default emoji map");
+      core.info("Using default emoji mappppppp");
       emojiMapToUse = emojiMap.mapping;
     }
 
