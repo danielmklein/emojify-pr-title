@@ -4,7 +4,7 @@
   "homepage": "https://pineapple.lol/",
   "version": "1.5.1",
   "dependencies": {
-    "@actions/core": "^1.2.6",
+    "@actions/core": "^1.6.0",
     "@actions/github": "^5.0.0",
     "@octokit/action": "^3.17.3",
     "emoji-regex": "^10.0.0",
