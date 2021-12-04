@@ -65,10 +65,13 @@ async function run() {
     };
 
     const { title } = github.context.payload.pull_request;
+    core.info("raw title: " + title);
     const cleanedTitle =
       cleanTitle(github.context.payload.pull_request.title, blocklist) || "";
     if (cleanedTitle !== title) core.info("Blocked emojis found, removing!");
     const processedTitle = titleSplit(title, er());
+    core.info("processed title: " + processedTitle);
+
     let newTitle = "";
 
     let needToUpdateTitle = false;
